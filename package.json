@@ -1,0 +1,24 @@
+{
+  "name": "WBA2SS17MhedhbiKuerkcueHanasoglu",
+  "version": "1.0.0",
+  "description": "",
+  "main": "aufgabe1.js",
+  "dependencies": {
+    "chalk": "^1.1.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FSR2017/WBA2SS17MhedhbiKuerkcueHanasoglu.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FSR2017/WBA2SS17MhedhbiKuerkcueHanasoglu/issues"
+  },
+  "homepage": "https://github.com/FSR2017/WBA2SS17MhedhbiKuerkcueHanasoglu#readme"
+}

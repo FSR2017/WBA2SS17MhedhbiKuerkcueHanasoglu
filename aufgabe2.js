@@ -1,7 +1,7 @@
 var fs = require ('fs');
 var chalk = require ('chalk');
 
-var colors = ['cyan', 'gray', 'magenta']
+var colors = ['red', 'blue', 'green']
 var colorRotator = 0;
 
 function rotateColor() {

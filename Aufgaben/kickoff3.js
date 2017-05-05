@@ -18,6 +18,11 @@ function rotateColor() {
 fs.readFile(__dirname + "/staedte.json", function(err, data) {
   var cities = JSON.parse(data).cities;
 
+  cities.sort(function (a, b) {
+    return a.population - b.population;
+  });
+
+
   cities.forEach(function(city) {
     for (var attribute in city) {
       if (city.hasOwnProperty(attribute)) {
@@ -26,9 +31,7 @@ fs.readFile(__dirname + "/staedte.json", function(err, data) {
     }
     console.log('-------------------------------');
   });
-  cities.sort(function (a, b) {
-    return a.population - b.population;
-  });
+
   fs.writeFile(__dirname + '/stadte_sortiert.json', JSON.stringify(cities), function(err, data){
     if(err) {
       console.log(chalk.green('-> Datei erfolgreich gespeichert!'));

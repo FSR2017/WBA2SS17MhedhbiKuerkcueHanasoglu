@@ -13,7 +13,7 @@ function rotateColor() {
   return colors[rotation];
 }
 fs.readFile(__dirname + "/staedte.json", function(err, data) {
-  JSON.parse(data).cities.foreEach(function(city) {
+  JSON.parse(data).cities.forEach(function(city) {
     for (var attribute in city) {
       if (city.hasOwnProperty(attribute)) {
         console.log(chalk[rotateColor()](attribute +': '+ city[attribute]));

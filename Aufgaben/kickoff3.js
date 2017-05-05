@@ -1,3 +1,11 @@
+var fs = require ('fs');
+var chalk = require ('chalk');
+
+var colors = ['blue' , 'red', 'green'];
+
+var colorRotator = 0;
+
+
 function rotateColor() {
   var rotation = colorRotator++;
   if(colorRotator >= colors.length) {
